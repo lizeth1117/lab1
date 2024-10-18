@@ -28,11 +28,11 @@ public class Reyna_melendez_clics {
         int clics3= entrada.nextInt();
         System.out.println("Ingrese el Costo por clics del anuncio 1:");
         double costos3= entrada.nextDouble();
-        double totalcostos= ((clics1*costos1)+(clics2*costos2)+(clics3+costos3)) ;
-        int totalclics= clics1+clics2+clics3 ;
-        double promedio=(totalclics/totalcostos) ;
+        double totalcostos= ((clics1*costos1)+(clics2*costos2)+(clics3*costos3)) ;
+        int totalclics= (clics1+clics2+clics3) ;
+        double promedio=(totalcostos/totalclics) ;
         double impuesto= totalcostos*1.16 ;
-        System.out.println("El Promedio es de: "+String.format("%.2f",totalcostos)+"El subtotal es de "+String.format("%.2f",totalcostos)+"\n"
+        System.out.println("El Costo Promedio por clic es de: "+String.format("%.2f",promedio)+"\n"+"El subtotal es de "+String.format("%.2f",totalcostos)+"\n"
                 + "y el total con ISV es de: "+String.format("%.2f",impuesto));
         
     }
